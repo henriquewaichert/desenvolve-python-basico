@@ -1,1 +1,1 @@
-
+Para resolver o truque da tabuada do 9, primeiro subtraímos 1 do número multiplicador (n) para obter o dígito da dezena (digito1) e então subtraímos o resultado anterior de 10 para encontrar o dígito das unidades (digito2). Finalmente, multiplicamos o digito1 por 10 e somamos com digito2 para obter o resultado da multiplicação de 9 por n. Por exemplo, para multiplicar 9 por 7, temos digito1 = 7 - 1 = 6 e digito2 = 10 - 7 = 3. Assim, 9 x 7 = 6*10 + 3 = 63.
