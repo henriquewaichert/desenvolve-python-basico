@@ -47,7 +47,6 @@ for elemento1, elemento2 in zip(lista1, lista2):
     lista_intercalada.append(elemento1)
     lista_intercalada.append(elemento2)
 
-
 lista_intercalada.extend(lista1[len(lista2):])
 lista_intercalada.extend(lista2[len(lista1):])
 
