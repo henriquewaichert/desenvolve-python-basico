@@ -51,6 +51,10 @@ for elemento1, elemento2 in zip(lista1, lista2):
 lista_intercalada.extend(lista1[len(lista2):])
 lista_intercalada.extend(lista2[len(lista1):])
 
+print(" ")
 print("Lista 1:", lista1)
+print(" ")
 print("Lista 2:", lista2)
+print(" ")
 print("Lista intercalada:", lista_intercalada)
+print(" ")
