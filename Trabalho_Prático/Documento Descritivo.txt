@@ -1,0 +1,63 @@
+Documento Descritivo
+
+.Introdução:.
+
+A empresa que estamos modelando é uma loja de eletrônicos chamada "TechStore". A Tech Store oferece uma variedade de produtos eletrônicos, como smartphones, laptops, tablets, acessórios e muito mais. Os principais tipos de usuários que vão usufruir do sistema são gerentes, funcionários e clientes.
+
+.Implementação:.
+
+.Usuários:.
+
+1. .Estrutura de Dados:.
+   - Para armazenar as informações dos usuários, utilizamos um dicionário em Python, onde a chave é o nome de usuário e o valor é uma lista contendo a senha, o tipo de usuário e as permissões.
+   
+2. .Arquivo de Registro: 
+   - O arquivo `'usuarios.csv'` é estruturado da seguinte forma:
+   
+     ```
+     Username, Password, Type, Permissions
+     joao123, senha123, gerente, C;R;U;D
+     maria 456, senha 456, funcionário, C;R
+     carlos 789, senha 789, estagiário, R
+     ```
+   
+   - Cada linha representa um usuário, onde as colunas são: nome de usuário, senha, tipo de usuário e permissões separadas por ponto e vírgula.
+
+3. *Funcionalidades:*
+   - .Create (C):. Adicionar um novo usuário ao sistema.
+   - .Read (R):. Ler os dados de todos os usuários ou de um usuário específico.
+   - .Update (U):. Atualizar os dados de um usuário existente, incluindo senha, tipo de usuário e permissões.
+   - .Delete (D):. Excluir um usuário do sistema.
+
+.Produtos/Serviços:.
+
+1. .Estrutura de Dados:.
+   - Para armazenar as informações dos produtos, utilizamos uma lista de dicionários em Python, onde cada dicionário representa um produto e suas informações, como nome, preço, quantidade e categoria.
+
+2. .Arquivo de Registro:.
+   - O arquivo `'produtos.csv'` é estruturado da seguinte forma:
+   
+     ```
+     Name, Price, Quantity, Category
+     Smartphone XYZ, 999.99, 10, Smartphones
+     Laptop ABC, 1299.99, 5, Laptops
+     Headphones XYZ, 99.99, 20, Acessórios
+     ```
+   
+   - Cada linha representa um produto, onde as colunas são: nome do produto, preço, quantidade em estoque e categoria.
+
+3. .Funcionalidades:.
+   - .Create (C):. Adicionar um novo produto ao sistema.
+   - .Read (R):. Ler os dados de todos os produtos ou de um produto específico.
+   - .Update (U):. Atualizar os dados de um produto existente, como preço e quantidade em estoque.
+   - .Delete (D):. Excluir um produto do sistema.
+
+.Conclusão:.
+
+Durante a implementação deste sistema de gerenciamento para a TechStore, enfrentamos algumas dificuldades, como garantir a integridade dos dados e implementar todas as funcionalidades CRUD de forma eficiente. No entanto, conseguimos superar esses desafios usando estruturas de dados adequadas e manipulação de arquivos CSV. 
+
+Uma escolha bem-sucedida foi usar dicionários para armazenar informações de usuários e uma lista de dicionários para produtos, pois isso nos permitiu acessar e manipular facilmente os dados. 
+
+O que faltou fazer foi implementar recursos adicionais, como validação de entrada de dados e controle de acesso mais robusto. 
+
+Para melhorar este trabalho, poderíamos adicionar recursos de autenticação mais avançados e uma interface de usuário mais amigável. Além disso, poderíamos explorar outras opções de armazenamento de dados, como bancos de dados relacionais ou não relacionais, para lidar com volumes maiores de dados e garantir uma maior escalabilidade do sistema.

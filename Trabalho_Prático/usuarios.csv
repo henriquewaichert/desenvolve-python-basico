@@ -1,0 +1,4 @@
+Username,Password,Type,Permissions
+joao123,senha123,gerente,C;R;U;D
+maria456,senha456,funcionario,C;R
+carlos789,senha789,estagiario,R
