@@ -1,6 +1,11 @@
 Documento Descritivo: Trabalho Prático - DEVWaichert
 
-Introdução: A DEVWaichert é uma empresa especializada no desenvolvimento de websites responsivos, otimizados e modernos. O sistema de gerência desenvolvido permitirá o controle de usuários com diferentes permissões e a organização dos serviços oferecidos pela empresa, como criação de websites institucionais, manutenção de sites, e desenvolvimento de lojas virtuais (e-commerce).
+Introdução: A DEVWaichert é uma empresa especializada no desenvolvimento de websites 
+responsivos, otimizados e modernos. O sistema de gerência desenvolvido 
+permitirá o controle de usuários com diferentes permissões e a organização dos 
+serviços oferecidos pela empresa, como 
+criação de websites institucionais, manutenção de sites, 
+e desenvolvimento de lojas virtuais (e-commerce).
 
 Os tipos de usuários que utilizam o sistema incluem:
 
