@@ -1,5 +1,5 @@
 import csv
-
+# Função para carregar dados de um arquivo CSV
 def carregar_dados(nome_arquivo):
     dados = []
     with open(nome_arquivo, mode='r') as arquivo_csv:
@@ -7,13 +7,15 @@ def carregar_dados(nome_arquivo):
         for linha in leitor:
             dados.append(linha)
     return dados
-
+    
+# Função para salvar dados em um arquivo CSV
 def salvar_dados(nome_arquivo, dados, campos):
     with open(nome_arquivo, mode='w', newline='') as arquivo_csv:
         escritor = csv.DictWriter(arquivo_csv, fieldnames=campos)
         escritor.writeheader()
         escritor.writerows(dados)
-
+        
+# Funções CRUD para Usuários
 def criar_usuario(dados, id, nome, senha, cargo, permissoes):
     dados.append({'id': id, 'nome': nome, 'senha': senha, 'cargo': cargo, 'permissoes': permissoes})
     print(f"Usuário {nome} criado com sucesso.")
@@ -38,7 +40,7 @@ def deletar_usuario(dados, id):
             return
     print(f"Usuário com id {id} não encontrado.")
 
-
+# Funções CRUD para Serviços
 def criar_servico(dados, codigo, nome, descricao, preco):
     dados.append({'codigo': codigo, 'nome': nome, 'descricao': descricao, 'preco': preco})
     print(f"Serviço {nome} adicionado.")
@@ -70,10 +72,11 @@ def deletar_servico(dados, codigo):
             return
     print(f"Serviço com código {codigo} não encontrado.")
 
-
+# Testando as funcionalidades
 usuarios = carregar_dados('usuarios.csv')
 servicos = carregar_dados('servicos.csv')
 
+# Exemplo de uso:
 criar_usuario(usuarios, 4, 'Ricely', 'suporte', 'cliente', 'viwe_only')
 listar_usuarios(usuarios)
 salvar_dados('usuarios.csv', usuarios, ['id', 'nome', 'senha', 'cargo', 'permissoes'])
