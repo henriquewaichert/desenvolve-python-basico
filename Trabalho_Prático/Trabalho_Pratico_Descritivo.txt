@@ -1,0 +1,40 @@
+Documento Descritivo: Trabalho Prático - DEVWaichert
+
+Introdução: A DEVWaichert é uma empresa especializada no desenvolvimento de websites responsivos, otimizados e modernos. O sistema de gerência desenvolvido permitirá o controle de usuários com diferentes permissões e a organização dos serviços oferecidos pela empresa, como criação de websites institucionais, manutenção de sites, e desenvolvimento de lojas virtuais (e-commerce).
+
+Os tipos de usuários que utilizam o sistema incluem:
+
+    Administrador: Acesso total para gerenciar usuários e serviços.
+    Desenvolvedor: Acesso limitado para ver serviços e adicionar novos projetos.
+    Clientes: Somente podem visualizar os serviços contratados.
+    Implementação:
+
+Usuários:
+
+Estrutura de Dados: Um arquivo CSV (usuarios.csv) que armazena os dados dos usuários, contendo os seguintes campos:
+    id: Identificador único do usuário.
+    nome: Nome do usuário.
+    senha: Senha para acesso ao sistema.
+    cargo: Cargo do usuário (administrador, desenvolvedor, cliente).
+    permissoes: Tipo de permissão (full para administrador, limited para desenvolvedor, view_only para cliente).
+
+Funcionalidades:
+C (Create): Adicionar novos usuários ao sistema.
+R (Read): Listar e buscar usuários por nome ou ID.
+U (Update): Atualizar as informações de um usuário existente.
+D (Delete): Remover um usuário do sistema.
+Serviços:
+
+Estrutura de Dados: Um arquivo CSV (servicos.csv) para armazenar os serviços oferecidos pela empresa, com os campos:
+    codigo: Código identificador do serviço.
+    nome: Nome do serviço (ex: criação de sites).
+    descricao: Descrição do serviço.
+    preco: Preço do serviço em reais.
+
+Funcionalidades:
+    C (Create): Adicionar novos serviços ao sistema.
+    R (Read): Listar e buscar serviços por nome ou código.
+    U (Update): Atualizar os detalhes de um serviço.
+    D (Delete): Remover serviços descontinuados.
+
+Conclusão: O desenvolvimento do sistema DEVWaichert trouxe desafios como a estruturação adequada dos arquivos CSV e a implementação de permissões de acesso para diferentes tipos de usuários. A escolha de armazenar os dados em arquivos CSV simples facilitou a manipulação e o gerenciamento das informações. Se o projeto fosse estendido, poderíamos incluir funcionalidades como login de usuário e uma interface gráfica para maior usabilidade. Também seria interessante integrar o sistema com uma base de dados relacional no futuro para escalar a aplicação.

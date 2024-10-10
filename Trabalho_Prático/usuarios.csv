@@ -1,0 +1,5 @@
+id,nome,senha,cargo,permissoes
+1,Samara,G3p0n#n3t,administradora,limited
+2,Henrique,devpass,desenvolvedor,full
+3,Adilson,clienteweb,cliente,view_only
+4,Ricely,suporte,cliente,viwe_only
