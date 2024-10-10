@@ -42,4 +42,9 @@ Funcionalidades:
     U (Update): Atualizar os detalhes de um serviço.
     D (Delete): Remover serviços descontinuados.
 
-Conclusão: O desenvolvimento do sistema DEVWaichert trouxe desafios como a estruturação adequada dos arquivos CSV e a implementação de permissões de acesso para diferentes tipos de usuários. A escolha de armazenar os dados em arquivos CSV simples facilitou a manipulação e o gerenciamento das informações. Se o projeto fosse estendido, poderíamos incluir funcionalidades como login de usuário e uma interface gráfica para maior usabilidade. Também seria interessante integrar o sistema com uma base de dados relacional no futuro para escalar a aplicação.
+Conclusão: O desenvolvimento do sistema DEVWaichert trouxe desafios como a estruturação adequada dos arquivos CSV e a 
+implementação de permissões de acesso para diferentes tipos de usuários. A escolha de armazenar 
+os dados em arquivos CSV simples facilitou a manipulação e o gerenciamento das informações. 
+Se o projeto fosse estendido, poderíamos incluir funcionalidades como login de usuário e uma 
+interface gráfica para maior usabilidade. 
+Também seria interessante integrar o sistema com uma base de dados relacional no futuro para escalar a aplicação.
